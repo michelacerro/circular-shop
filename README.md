@@ -17,7 +17,7 @@ Here you can find the file exported from the site thanks the All-in-One WP Migra
 3. With the plugin import the file
 
 ## The code branch
-here you can find the code files and folders that make up the program.
+Here you can find the code files and folders that make up the program.
 
 ## Acknowledgment
 Photos from Pexels

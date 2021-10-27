@@ -1,0 +1,247 @@
+/* ---------- GENERAL PART ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* COLOR PALETTE */
+/* text */
+.has-black-color {color: #000000;}
+.has-light-grey-color {color: #f5f5f5;}
+.has-white-color {color: #ffffff;}
+.has-aqua-green-color {color: #378C8C;}
+.has-light-orange-color {color: ##FFCE85;}
+.has-dark-orange-color {color: #F29F05;}
+
+/* background */
+.has-black-background-color {background-color: #000000;}
+.has-light-grey-background-color {background-color: #f5f5f5;}
+.has-white-background-color {background-color: #ffffff;}
+.has-aqua-green-background-color {background-color: #378C8C;}
+.has-light-orange-background-color {background-color: ##FFCE85;}
+.has-dark-orange-background-color {background-color: #F29F05;}
+
+/* ----- end general part ----- */
+
+
+/* --------------- COMPONENTS PART --------------- */
+/* ---------- MENU ---------- */
+  /* menu elements */
+  .nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 10px;
+  }
+  .nav a:hover {border-bottom: 1px solid #000000;}
+
+  /* menu icon */
+  #menu-icon span {
+    display: block;
+    height: 3px;
+    width: 22px;
+    margin: 4px;
+  }
+
+  #menu-icon {display: none;}
+
+  /* menu block out header */
+  #menu-block-out-header {
+    display: none;
+    width: 100%;
+    padding: 10px;
+  }
+/* ----- end menu ----- */
+
+
+/* ---------- SIDEBAR ---------- */
+  /* titles */
+  #sidebar h4 {
+    padding: 0.5em;
+    border-bottom: 1.5px solid #000000;
+  }
+
+  /* elements */
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #sidebar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  #sidebar a:hover {border-bottom: 1px solid #000000;}
+
+  /* last articles elements*/
+  .wp-block-latest-posts li:nth-child(odd) {background-color: #f5f5f5;}
+/* ----- end sidebar ----- */
+/* ---------- end components part ---------- */
+
+
+/* --------------- PAGES PART --------------- */
+/* ---------- CONTACTS PAGE ---------- */
+  div.wp-block-columns {
+    margin-top: 40px;
+    background-color: #FFCE85;
+    padding: 20px;
+  }
+
+  /* info */
+  div.wp-block-column {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* timetable */
+  div.wp-block-column table {
+    width: 100%;
+    max-width: 300px;
+  }
+  div.wp-block-column table::before {
+    width: 100%;
+    max-width: 300px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    content: 'Orari';
+  }
+
+  /* form */
+  form.wpcf7-form {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form.wpcf7-form p {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  form.wpcf7-form label {
+    color: #378C8C;
+    font-weight: bold;
+  }
+
+  .wpcf7-form label input, .wpcf7-form label textarea, input.wpcf7-submit {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 7px;
+  }
+
+  input.wpcf7-submit {
+    background: #378C8C;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  input.wpcf7-submit:hover {color: #F29F05;}
+
+  span.acceptance-383 label {
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+
+  span.acceptance-383 label a {color: #378C8C;}
+
+  span.acceptance-383 label input {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  /* ----- end contacts page ----- */
+
+
+/* ---------- BLOG PAGE (and archives pages) ---------- */
+  .preview-post-container {
+    width: 250px;
+    height: 400px;
+  }
+  .preview-post-title a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .preview-post-title a:hover {border-bottom: 1px solid #ffffff;}
+/* ----- end blog page ------ */
+
+
+/* --------- SINGLE POST PAGE ---------- */
+  /* category */
+  .post-category ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .post-category a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.5em;
+  }
+  .post-category a:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  /* tags */
+  .post-tag a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .post-tag a:hover{border-bottom: 1px solid #000000;}
+
+  /* posts link */
+  .posts-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .posts-links a:hover {border-bottom: 1px solid #000000;}
+/* ----- end single post page ------ */
+
+
+/* ---------- 404 PAGE ---------- */
+a.error-link {
+  text-decoration: none;
+  color: #F29F05;
+}
+a.error-link:hover {border-bottom: 1px solid #F29F05;}
+/* ---------- end pages part ------------ */
+
+
+/* ---------- RESPONSIVENESS ------------  */
+  /* MENU */
+  @media only screen and (max-width: 600px) {
+    #menu-icon {display: block;}
+    #menu-block-in-header {display: none;}
+  }
+
+  /* CONTACT PAGE */
+  @media only screen and (max-width: 783px) {
+    div.wp-block-columns {flex-direction: column;}
+    div.wp-block-column {width: 100%;}
+  }
+
+  /* SINGLE POST PAGE */
+  @media only screen and (max-width: 480px) {
+    .responsive-thumbnail {display: none;}
+}
